@@ -123,7 +123,7 @@ An alternative implementation in `notebooks/research_qa.ipynb` featuring:
    - Example questions:
      - "What is the role of HER-2/neu in breast cancer?"
      - "How does HER-2/neu amplification affect survival rates?"
-     - "What are the clinical implications of HER2 status?"
+     - "What are the clinical implications of HER-2/neu status?"
 
 ## Requirements
 
