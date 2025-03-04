@@ -4,12 +4,18 @@ A specialized chatbot for querying and analyzing clinical research papers using 
 
 ## Features
 
-- 🔍 **Semantic Search**: Uses BioBERT embeddings for accurate biomedical text understanding
+- 🔍 **Advanced Semantic Search**: 
+  - BioBERT embeddings for accurate biomedical text understanding
+  - Integration with Harvard's Clinical Knowledge Embeddings (67,124 clinical vocabulary embeddings)
+  - Combined embeddings approach for enhanced medical context
 - 🤖 **Advanced LLM**: Powered by Llama 3.2B for generating accurate, context-aware responses
 - 📚 **Source Citations**: Provides references to source documents for transparency
 - 💻 **User-Friendly Interface**: Clean, modern web interface for easy interaction
 - ⚡ **Fast Retrieval**: FAISS vector store for efficient similarity search
-- 🎯 **Domain-Specific**: Specialized for clinical and biomedical research papers
+- 🎯 **Domain-Specific**: 
+  - Specialized for clinical and biomedical research papers
+  - Enhanced with standardized clinical vocabulary across 7 medical vocabularies
+  - No dependency on patient-level information
 
 ## Project Structure
 
@@ -89,14 +95,7 @@ An alternative implementation in `notebooks/research_qa.ipynb` featuring:
 
 ## Setup and Usage
 
-1. **Environment Setup**:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate
-   pip install -r requirements.txt
-   ```
-
-2. **Start the Backend Server** (in one terminal):
+1. **Start the Backend Server** (in one terminal):
    ```bash
    cd backend
    source ../venv/bin/activate
@@ -104,7 +103,7 @@ An alternative implementation in `notebooks/research_qa.ipynb` featuring:
    ```
    Backend will run on `http://localhost:5001`
 
-3. **Access the Frontend** (choose one method):
+2. **Access the Frontend** (choose one method):
    
    Method A - Direct File:
    - Simply open `frontend/index.html` in your web browser
@@ -116,14 +115,14 @@ An alternative implementation in `notebooks/research_qa.ipynb` featuring:
    ```
    Then visit `http://localhost:8000` in your browser
 
-4. **Using the Chatbot**:
+3. **Using the Chatbot**:
    - The frontend will automatically connect to the backend at `http://localhost:5001`
    - Type your question about the research papers
    - Get answers with relevant source citations
    - Example questions:
      - "What is the role of HER-2/neu in breast cancer?"
      - "How does HER-2/neu amplification affect survival rates?"
-     - "What are the clinical implications of HER-2/neu status?"
+     - "What are the clinical implications of HER2 status?"
 
 ## Requirements
 
@@ -137,5 +136,19 @@ An alternative implementation in `notebooks/research_qa.ipynb` featuring:
 ## Note
 
 This chatbot is specifically trained on HER-2/neu breast cancer research papers. The same architecture can be adapted for other research domains by updating the document collection and retraining the vector store. 
+
+## Citations
+
+1. **Harvard Medical School Clinical Knowledge Embeddings**:
+   ```
+   @article{beam2020clinical,
+     title={Clinical Concept Embeddings Learned from Massive Sources of Medical Data},
+     author={Beam, Andrew L and Kompa, Benjamin and Fried, Inbar and Palmer, Nathan Patrick and Shi, Xu and Cai, Tianxi and Kohane, Isaac S},
+     journal={arXiv preprint arXiv:2010.00740},
+     year={2020}
+   }
+   ```
+   - Source: [Clinical Concept Embeddings (Harvard)](https://arxiv.org/abs/2010.00740)
+   - Dataset: [Harvard Medical School - Clinical Embeddings](https://figshare.com/articles/dataset/Clinical_Concept_Embeddings_Learned_from_Massive_Sources_of_Medical_Data/12382343)
 
 
