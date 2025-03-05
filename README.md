@@ -24,7 +24,7 @@ clinical_chatbot/
 ├── backend/
 │   ├── app.py                  # Flask server and API endpoints
 │   ├── qa_chain.py            # Core QA logic and model integration
-|   ├── process_research_paper.py  # Preprocess and clean-up and PDF research paper
+|   ├── process_research_paper.py  # Preprocess and clean-up the PDF research paper
 │   ├── build_combined_store.py # Vector store creation
 │   ├── test_qa_chain.py       # Tests QA chain functionality
 │   ├── test_pdf_cleaning.py   # Tests PDF text cleaning and processing
