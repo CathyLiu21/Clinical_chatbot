@@ -74,7 +74,7 @@ An alternative implementation in `notebooks/research_qa.ipynb` featuring:
 2. **Question Answering**:
    - User questions are embedded using the same model
    - Relevant documents are retrieved using semantic search
-   - Llama 3.2B generates concise, accurate answers
+   - Llama 3.2 3B generates concise, accurate answers
    - Sources are cited for verification
 
 ## Testing Components
