@@ -11,10 +11,14 @@ A specialized chatbot for querying and analyzing clinical research papers using 
 - 🤖 **Advanced LLM**: Powered by Llama 3.2 3B for generating accurate, context-aware responses
 - 📚 **Source Citations**: Provides references to source documents for transparency
 - 💻 **User-Friendly Interface**: Clean, modern web interface for easy interaction
-- ⚡ **Fast Retrieval**: FAISS vector store for efficient similarity search
+- 🔍 **Advanced RAG Implementation**: 
+  - Retrieval: Dual-source vector store combining clinical knowledge and research papers
+     - Fast Retrieval: FAISS vector store for efficient similarity search
+  - Augmentation: Enhanced context through clinical terminology matching
+  - Generation: Context-aware responses using Llama 3.2B
 - 🎯 **Domain-Specific**: 
   - Specialized for clinical and biomedical research papers
-  - Enhanced with standardized clinical vocabulary across 7 medical vocabularies
+  - Enhanced with standardized clinical vocabulary across variuos medical vocabularies
   - No dependency on patient-level information
 
 ## Project Structure
