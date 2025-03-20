@@ -15,7 +15,7 @@ A specialized chatbot for querying and analyzing clinical research papers using 
   - Retrieval: Dual-source vector store combining clinical knowledge and research papers
      - Fast Retrieval: FAISS vector store for efficient similarity search
   - Augmentation: Enhanced context through clinical terminology matching
-  - Generation: Context-aware responses using Llama 3.2B
+  - Generation: Context-aware responses using Llama 3.2 3B
 - 🎯 **Domain-Specific**: 
   - Specialized for clinical and biomedical research papers
   - Enhanced with standardized clinical vocabulary across variuos medical vocabularies
