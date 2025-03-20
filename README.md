@@ -8,7 +8,7 @@ A specialized chatbot for querying and analyzing clinical research papers using 
   - BioBERT embeddings for accurate biomedical text understanding
   - Integration with Harvard's Clinical Knowledge Embeddings (67,124 clinical vocabulary embeddings)
   - Combined embeddings approach for enhanced medical context
-- 🤖 **Advanced LLM**: Powered by Llama 3.2B for generating accurate, context-aware responses
+- 🤖 **Advanced LLM**: Powered by Llama 3.2 3B for generating accurate, context-aware responses
 - 📚 **Source Citations**: Provides references to source documents for transparency
 - 💻 **User-Friendly Interface**: Clean, modern web interface for easy interaction
 - ⚡ **Fast Retrieval**: FAISS vector store for efficient similarity search
